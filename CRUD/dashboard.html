@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body id="body-color">
+
+<div class="container">
+  
+  <div class="btn-group"><br><br>
+    <button type="button" class="btn btn-primary" onclick="insert()">Insert</button>
+    <button type="button" class="btn btn-primary" onclick="view()">Edit</button>
+    <button type="button" class="btn btn-primary" onclick="view()">View</button>
+    <button type="button" class="btn btn-primary" onclick="view()">Delete</button>
+  </div>
+
+<script>
+function insert() {
+    window.location.href='form.html';
+}
+</script>
+<script>
+function view() {
+    window.location.href='view.php';
+}
+</script>
+
+</div>
+<?php
+require ('view.php');
+?>
+</body>
+</html>
